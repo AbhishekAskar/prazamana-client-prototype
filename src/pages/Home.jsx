@@ -6,7 +6,14 @@ import { Link } from 'react-router-dom';
 
 import TrustedBy from '../components/sections/TrustedBy';
 
-
+// Images
+import heroFactoryBright from '../assets/images/hero-factory-bright.png';
+import serviceAssessment from '../assets/images/service-assessment.png';
+import serviceCertification from '../assets/images/service-certification.png';
+import serviceTraining from '../assets/images/service-training.png';
+import productGuarding from '../assets/images/product-guarding.png';
+import productTurnkey from '../assets/images/product-turnkey.png';
+import productLoto from '../assets/images/product-loto.png';
 
 const Card = ({ title, items, image, link }) => (
     <Link to={link || "#"}>
@@ -55,7 +62,7 @@ const Home = () => {
             <section
                 className="relative w-full min-h-[90vh] flex items-center px-6 md:px-12 overflow-hidden bg-white"
                 style={{
-                    backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 100%), url('/src/assets/images/hero-factory-bright.png')`,
+                    backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 100%), url(${heroFactoryBright})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
@@ -133,7 +140,7 @@ const Home = () => {
                                 "Sistema Calculation Reports",
                                 "CAT 3 Certificate Generation"
                             ]}
-                            image="/src/assets/images/service-assessment.png"
+                            image={serviceAssessment}
                             link="/services/risk-assessment"
                         />
 
@@ -144,7 +151,7 @@ const Home = () => {
                                 "UKCA Regulatory Support",
                                 "AS/NZ Standards Compliance"
                             ]}
-                            image="/src/assets/images/service-certification.png"
+                            image={serviceCertification}
                             link="/services/ce-marking"
                         />
 
@@ -155,7 +162,7 @@ const Home = () => {
                                 "EN ISO 12100 Standards",
                                 "EN 13489 Safety Protocols"
                             ]}
-                            image="/src/assets/images/service-training.png"
+                            image={serviceTraining}
                             link="#"
                         />
                     </div>
@@ -175,7 +182,7 @@ const Home = () => {
                                 "SIL 2 / PL d Certified",
                                 "Dust & Smoke Resistant"
                             ]}
-                            image="/src/assets/images/product-guarding.png"
+                            image={productGuarding}
                             link="/products/advanced-3d-radar-sensor"
                         />
 
@@ -186,7 +193,7 @@ const Home = () => {
                                 "Safety Device Integration",
                                 "Assembly Line Safety Fitouts"
                             ]}
-                            image="/src/assets/images/product-turnkey.png"
+                            image={productTurnkey}
                             link="#"
                         />
 
@@ -197,7 +204,7 @@ const Home = () => {
                                 "OSHA Compliant Architecture",
                                 "Eliminates Lockout Challenges"
                             ]}
-                            image="/src/assets/images/product-loto.png"
+                            image={productLoto}
                             link="/products/digital-smart-loto-solution"
                         />
                     </div>
