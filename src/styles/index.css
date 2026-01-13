@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #eab308;
+  --color-ui-accent: #d19a06;
+  --color-praz-yellow: var(--color-brand-yellow);
+  --color-praz-dark: #1F2937;
+  --font-sans: 'Manrope', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-gray-900);
+    background-color: white;
+  }
+}
